@@ -8,6 +8,8 @@ import java.io.Serializable;
  **/
 public class Payment implements Serializable {
 
+    private static final long serialVersionUID = 1L;
+
     private Integer id;
 
     private String serialNumber;
@@ -26,5 +28,13 @@ public class Payment implements Serializable {
 
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
+    }
+
+    public Payment(Integer id, String serialNumber) {
+        this.id = id;
+        this.serialNumber = serialNumber;
+    }
+
+    public Payment() {
     }
 }

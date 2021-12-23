@@ -1,16 +1,23 @@
 package com.codeforc.microservice.payment.result;
 
+import java.io.Serializable;
+
 /**
  * Author: Ifan·Huang
  * Description: 返回前端响应数据
  **/
-public class CommonResult<T> {
+public class CommonResult<T> implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Integer code;
 
     private String message;
 
     private T data;
+
+    public CommonResult() {
+    }
 
     public static CommonResult ok() {
         return ok(null);

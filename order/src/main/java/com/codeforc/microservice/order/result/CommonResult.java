@@ -1,10 +1,14 @@
 package com.codeforc.microservice.order.result;
 
+import java.io.Serializable;
+
 /**
  * Author: Ifan·Huang
  * Description: 返回前端响应数据
  **/
-public class CommonResult<T> {
+public class CommonResult<T> implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Integer code;
 
@@ -53,5 +57,8 @@ public class CommonResult<T> {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public CommonResult() {
     }
 }
