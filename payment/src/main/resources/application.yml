@@ -1,0 +1,20 @@
+# 该服务进程端口号
+server:
+  port: 8001
+
+# Spring相关配置，  application name指定服务名称、  datasource指定数据配置文件
+spring:
+  application:
+    name: payment
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///microserve_cloud?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+#  Mybatis配置：  mapperLocations 指定 mapper.xml文件所存放的路径 type-aliases-packages指定实体类所存放的包
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.codeforc.microservice.payment.entities
