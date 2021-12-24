@@ -1,6 +1,7 @@
 package com.codeforc.microservice.payment.service;
 
-import com.codeforc.microservice.payment.entities.Payment;
+
+import com.codeforc.microservice.common.entities.Payment;
 
 public interface IPaymentService {
 

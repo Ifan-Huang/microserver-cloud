@@ -11,6 +11,8 @@
     <modules>
         <module>payment</module>
         <module>order</module>
+        <module>cloud-api-common</module>
+        <module>registry</module>
     </modules>
     <name>microservice-Cloud</name>
 

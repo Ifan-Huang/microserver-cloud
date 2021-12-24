@@ -1,4 +1,4 @@
-package com.codeforc.microservice.payment.result;
+package com.codeforc.microservice.common.result;
 
 import java.io.Serializable;
 
@@ -15,9 +15,6 @@ public class CommonResult<T> implements Serializable {
     private String message;
 
     private T data;
-
-    public CommonResult() {
-    }
 
     public static CommonResult ok() {
         return ok(null);
@@ -60,5 +57,8 @@ public class CommonResult<T> implements Serializable {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public CommonResult() {
     }
 }

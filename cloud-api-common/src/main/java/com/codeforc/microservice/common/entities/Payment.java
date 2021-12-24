@@ -1,4 +1,4 @@
-package com.codeforc.microservice.order.entities;
+package com.codeforc.microservice.common.entities;
 
 import java.io.Serializable;
 

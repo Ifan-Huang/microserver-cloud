@@ -1,6 +1,6 @@
 package com.codeforc.microservice.payment.mapper;
 
-import com.codeforc.microservice.payment.entities.Payment;
+import com.codeforc.microservice.common.entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface PaymentMapper {
 
-    void insert( Payment payment);
+    void insert(Payment payment);
 
     Payment selectOne(Integer id);
 

@@ -17,4 +17,4 @@ spring:
 #  Mybatis配置：  mapperLocations 指定 mapper.xml文件所存放的路径 type-aliases-packages指定实体类所存放的包
 mybatis:
   mapperLocations: classpath:mapper/*.xml
-  type-aliases-package: com.codeforc.microservice.payment.entities
+  type-aliases-package: com.codeforc.microservice.common.entities

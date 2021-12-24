@@ -1,6 +1,6 @@
 package com.codeforc.microservice.payment.service.impl;
 
-import com.codeforc.microservice.payment.entities.Payment;
+import com.codeforc.microservice.common.entities.Payment;
 import com.codeforc.microservice.payment.mapper.PaymentMapper;
 import com.codeforc.microservice.payment.service.IPaymentService;
 import org.springframework.stereotype.Service;

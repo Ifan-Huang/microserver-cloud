@@ -1,7 +1,7 @@
 package com.codeforc.microservice.payment.controller;
 
-import com.codeforc.microservice.payment.entities.Payment;
-import com.codeforc.microservice.payment.result.CommonResult;
+import com.codeforc.microservice.common.entities.Payment;
+import com.codeforc.microservice.common.result.CommonResult;
 import com.codeforc.microservice.payment.service.IPaymentService;
 import org.springframework.web.bind.annotation.*;
 
