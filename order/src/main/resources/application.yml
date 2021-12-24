@@ -18,3 +18,8 @@ spring:
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.codeforc.microserver.payment.entities
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost/eureka
